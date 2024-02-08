@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 0 (task 2)</title>
+    </head>
+    <body>
+        <meta charset="UTF-8">
+        <form action="/action.py" method="get">
+            <label for="genre"> Выберите жанр: </label>
+            <input list="genres" name="genre" id="genre"><br>
+            <datalist id="genres">
+                <option value="Ужасы">
+                <option value="Триллер">
+                <option value="Драма">
+                <option value="Боевик">
+                <option value="Мультфильм">
+                <option value="Романтика">
+            </datalist>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
