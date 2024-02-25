@@ -1,0 +1,1 @@
+FROM --platform=linux/amd64 php:8-fpm
