@@ -307,3 +307,49 @@ $arr = ['a', 'b', 'c', 'd', 'e'];
 echo count($arr) . "\n <br>";
 
 echo end($arr) . " " . prev($arr) . "\n <br>";
+
+//task 18 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br>TASK 18 \n <br>";
+
+function compareSum($a, $b)
+{
+    if ($a + $b > 10)
+        return true;
+    else
+        return false;
+}
+$convert = compareSum(15, -4) ? 'true' : 'false';
+echo '15 & -4 ' . $convert . "\n <br>";
+
+function compare($a, $b)
+{
+    if ($a == $b)
+        return true;
+    else
+        return false;
+}
+$convert = compare(5, -5) ? 'true' : 'false';
+echo '5 & -5 ' . $convert . "\n <br>";
+
+$test = 0;
+echo ($test == 0 ? 'верно' : 'неверно') . "\n <br>";
+
+$age = 20;
+if ($age >= 10 && $age <= 99)
+{
+    $sum = array_sum(str_split($age));
+    if ($sum <= 9)
+        echo "сумма цифр однозначна /n <br>";
+    else
+        echo "сумма цифр двузначна /n <br>";
+}
+else
+{
+    echo "число не попадает в диапазон /n <br>";
+}
+
+$arr = [1, 2, 4];
+if (count($arr) == 3)
+{
+    echo array_sum($arr) . "/n <br>";
+}
