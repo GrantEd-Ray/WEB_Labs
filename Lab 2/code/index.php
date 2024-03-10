@@ -353,3 +353,16 @@ if (count($arr) == 3)
 {
     echo array_sum($arr) . "/n <br>";
 }
+
+//task 19 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br>TASK 19 \n <br>";
+
+$newTree = [];
+for ($i = 0; $i < 20; $i++)
+{
+    $newTree[] = str_repeat('x', $i + 1);
+}
+for ($i = 0; $i < count($newTree); $i++)
+{
+    echo $newTree[$i] . "\n <br>";
+}
