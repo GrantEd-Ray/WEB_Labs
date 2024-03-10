@@ -160,3 +160,16 @@ while ($sum <= 10)
     $index++;
 }
 echo $index . "\n <br>";
+
+//task 15 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br> TASK 15 \n <br>";
+
+function printStringReturnNumber()
+{
+    echo "This function is useless\n <br>";
+    return 26;
+}
+
+$my_num = printStringReturnNumber();
+
+echo $my_num . "\n <br>";
