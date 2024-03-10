@@ -173,3 +173,59 @@ function printStringReturnNumber()
 $my_num = printStringReturnNumber();
 
 echo $my_num . "\n <br>";
+
+//task 16 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br>TASK 16 \n <br>";
+
+function increaseEnthusiasm(string $yourSentence) : string
+{
+    return $yourSentence . "!!!"; // Зачем ограничиваться одним знаком, если можно три?!
+}
+
+echo increaseEnthusiasm("АХАХАХАХАХАХАХАХАХАХ") . "\n <br>";
+
+function repeatThreeTimes(string $mySentence) : string
+{
+    return $mySentence . $mySentence . $mySentence;
+}
+
+echo repeatThreeTimes("ПОВТОРИТЬ 3 РАЗА!! ") . "\n <br>";
+
+echo increaseEnthusiasm(repeatThreeTimes('ТОПТЕЛЕ')) . "\n <br>";
+
+function cut(string $ourSentence, int $numbers = 10)
+{
+    $sentence = "";
+    for ($i = 0; $i < $numbers; $i++)
+    {
+        $sentence .= $ourSentence[$i];
+    }
+    return $sentence;
+}
+echo cut("Bugs will be everywhere.", 4) . "\n <br>";
+
+$someRandomMas = [5, 458, -151, 1, 69, 0, 111111, -32, 360];
+function recursion($mas, $index = 0)
+{
+    if ($index < count($mas))
+    {
+        echo $mas[$index] . " ";
+        return recursion($mas, $index + 1);
+    }
+    echo "\n <br>";
+}
+recursion($someRandomMas);
+
+function numSum($justNum)
+{
+    $res = array_sum(str_split($justNum));
+    if ($res > 9)
+    {
+        return numSum($res);
+    }
+    else
+    {
+        return $res;
+    }
+}
+echo numSum(88005553535) . "\n <br>";
