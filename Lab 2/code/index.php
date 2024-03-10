@@ -366,3 +366,33 @@ for ($i = 0; $i < count($newTree); $i++)
 {
     echo $newTree[$i] . "\n <br>";
 }
+
+//task 20 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br>TASK 20 \n <br>";
+
+$anotherNewArray = [5, -4, 16, 34, -88, 5, 61];
+echo array_sum($anotherNewArray) / count($anotherNewArray) . "\n <br>";
+
+$sum = (1 + 100) * 100 / 2;
+echo $sum . "\n <br>";
+
+$oneMoreArray = [5, 45, 9, 25, 49, 1, 77];
+$oneMoreArray = array_map('sqrt', $oneMoreArray);
+foreach ($oneMoreArray as $value)
+{
+    echo "$value ";
+}
+echo "\n <br>";
+
+$letters = range('a', 'z');
+$numbers = range(1, 26);
+$finallyLastArray = array_combine($letters, $numbers);
+foreach ($finallyLastArray as $key => $value)
+{
+    echo "$key : $value \n <br>";
+}
+echo "\n <br>";
+
+$digits = '1234567890';
+$lastSum = array_sum(str_split($digits, 2));
+echo $lastSum . "\n <br>";
