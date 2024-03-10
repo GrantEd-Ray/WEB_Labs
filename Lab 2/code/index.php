@@ -47,3 +47,16 @@ echo "\n <br>TASK 12 \n <br>";
 
 echo 8 ** 2;
 echo "\n <br>";
+
+//task 13 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br>TASK 13 \n <br>";
+
+$my_num = 17;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+echo "\n <br>";
