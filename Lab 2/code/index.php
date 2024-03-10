@@ -229,3 +229,81 @@ function numSum($justNum)
     }
 }
 echo numSum(88005553535) . "\n <br>";
+
+//task 17 ---------------------------------------------------------------------------------------------------------------
+echo "\n <br>TASK 17 \n <br>";
+
+$tree = [];
+for ($i = 0; $i < 5; $i++)
+{
+    $tree[] = str_repeat('x', $i + 1);
+}
+for ($i = 0; $i < count($tree); $i++)
+{
+    echo $tree[$i] . "\n <br>";
+}
+
+function arrayFill($value, $count)
+{
+    $newArray = [];
+    for ($i = 0; $i < $count; $i++)
+    {
+        $newArray[] = $value;
+    }
+    return $newArray;
+}
+$someArray = arrayFill('x', 5);
+for ($i = 0; $i < count($someArray); $i++)
+{
+    echo $someArray[$i] . " ";
+}
+echo "\n <br>";
+
+$array2D = [[1, 2, 3], [4, 5], [6]];
+$arrayNon2D = $array2D[0];
+for ($i = 1; $i < count($array2D); $i++)
+{
+    $arrayNon2D = array_merge($arrayNon2D, $array2D[$i]);
+}
+foreach ($arrayNon2D as $value)
+{
+    echo "$value ";
+}
+echo "\n <br>";
+
+$newArray2D = [];
+for ($i = 0; $i < 3; $i++)
+{
+    $array1D = [];
+    for ($j = 0; $j < 3; $j++)
+    {
+        $array1D[] = 3 * $i + $j + 1;
+    }
+    $newArray2D[] = $array1D;
+}
+
+foreach ($newArray2D as $array1D)
+{
+    foreach ($array1D as $value)
+    {
+        echo $value . " ";
+    }
+    echo "\n <br>";
+}
+
+$simpleArray = [2, 5, 3, 9];
+$simpleArray[0] *= $simpleArray[1];
+$simpleArray[2] *= $simpleArray[3];
+$result = array_sum($simpleArray);
+echo $result . "\n <br>";
+
+$user = ['name' => 'Михаил', 'surname' => 'Зубенко', 'patronymic' => 'Петрович'];
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'] . "\n <br>";
+
+$date = ['year' => 2024, 'month' => 'March' , 'day' => 10];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day'] . "\n <br>";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr) . "\n <br>";
+
+echo end($arr) . " " . prev($arr) . "\n <br>";
